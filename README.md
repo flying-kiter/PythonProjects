@@ -4,4 +4,4 @@ interate all my greenhand python projects
 >In spider, I create internet scrapping programs which is collected in the folder "spider"
 ## 2. Game Scripting in Python
 >In this folder, some source open documents are displayed. Furthermore, I create python projects 
->respectively in order to implement their on my own hands.
+>respectively in order to implement their idea on my own hands.
