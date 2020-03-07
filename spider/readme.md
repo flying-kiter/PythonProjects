@@ -1,23 +1,24 @@
-# 1.确定程序结构
+[toc]
 
->--- app.py #入口启动脚本【执行抓取、保存、解析、存入数据表等任务】
----- models #模型包【存放模型】
--------- models.py #模型模块【存放模板信息模型】
--------- configs.py #数据库连接配置
----- catch #爬虫包【单进程抓取模块、多进程抓取模块】
--------- spider_single.py #单进程抓取模块
--------- spider_mutil.py #多进程抓取模块
--------- single_mutil.py #单进程多进程对比
----- pick #提取保存包【存放提取保存的模块】
--------- pick_save.py #提取保存模块
----- result #存放抓取数据的目录
--------- bs_theme #存放指定网站数据的目录
+# 1.确定程序结构
+* app.py #入口启动脚本【执行抓取、保存、解析、存入数据表等任务】
+* models #模型包【存放模型】
+	- [x] models.py #模型模块【存放模板信息模型】
+	- [ ] configs.py #数据库连接配置
+* catch #爬虫包【单进程抓取模块、多进程抓取模块】
+	- [x] spider_single.py #单进程抓取模块
+	- [ ] spider_mutil.py #多进程抓取模块
+	- [ ] single_mutil.py #单进程多进程对比
+* pick #提取保存包【存放提取保存的模块】
+	- [x] pick_save.py #提取保存模块
+* result #存放抓取数据的目录
+	- [x] bs_theme #存放指定网站数据的目录
 
 # 2.设计数据表
 ## 2-1.确定数据库名称
 ### 如果不存在则创建
 _create database if not exists spider;_
-## 如果存在则删除
+### 如果存在则删除
 _drop database if exists spider;_
  ### 切换到爬虫数据库中
 _use spider;_
