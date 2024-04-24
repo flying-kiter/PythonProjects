@@ -492,4 +492,4 @@ class EHA(object):
 
 # 创建测试对象
 t = EHA(sideNum = 4, areaValue = 0.0025, height = 0.05, turnsAx = 6, turnsMx = 5, pitchAx = 0.003, pitchMx = 0.002, IAx = 1, IMx = 1)
-print(t.StandardDeviaton())
+print(t.FluxDensityStandardDeviaton())
